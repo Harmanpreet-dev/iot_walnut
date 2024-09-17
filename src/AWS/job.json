@@ -1,0 +1,8 @@
+{
+  "jobDocument": {
+    "operation": "restart_device",
+    "instructions": {
+      "actions": ["restart"]
+    }
+  }
+}
