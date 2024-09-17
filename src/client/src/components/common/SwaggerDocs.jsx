@@ -6,7 +6,7 @@ import "./swaggerDocs.css";
 const SwaggerUIComponent = () => {
   return (
     <div>
-      <SwaggerUI url="http://localhost:8080/swagger.json" />
+      <SwaggerUI url="http://35.174.211.248:8080/swagger.json" />
     </div>
   );
 };
