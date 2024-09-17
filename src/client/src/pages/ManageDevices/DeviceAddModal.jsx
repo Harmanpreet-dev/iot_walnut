@@ -22,7 +22,11 @@ export default function DeviceAddModal({ getDevices }) {
     formData.append("file", file);
     formData.append("fleet", params.fleet);
     axiosInstance
-      .post(`/devices/whitelist`, formData)
+      .post(`/devices/whitelist`, formData, {
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+      })
       .then((res) => {
         setLoading(false);
         getDevices();

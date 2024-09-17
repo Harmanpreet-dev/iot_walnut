@@ -25,7 +25,7 @@ export default function DeviceAddBlackModal({ getDevices }) {
       .post(`/devices/blacklist`, formData, {
         headers: {
           Authorization: `Bearer ${jwt}`,
-          "Content-Type": "multipart/form-data",
+          "Content-Type": "application/x-www-form-urlencoded",
         },
       })
       .then((res) => {
