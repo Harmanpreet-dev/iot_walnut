@@ -3,7 +3,6 @@ import morgan from "morgan";
 import helmet from "helmet";
 import cors from "cors";
 import { config } from "dotenv";
-import bodyParser from "body-parser";
 import { errorHandler } from "./src/middlewares/errorHandler.js";
 import { logger } from "./src/utils/logger.js";
 import { connectDb } from "./src/config/dbConfig.js";
@@ -32,7 +31,6 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(bodyParser.json());
 app.use(morgan("combined"));
 app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 app.use(cors());
@@ -63,14 +61,14 @@ app.use(`${baseUrl}/schedulers`, schedulerRouter);
 app.use(`${baseUrl}/users`, usersRouter);
 
 // Index route
-app.get("/", (req, res) => {
+app.get("/", (_, res) => {
   return res.status(200).json({
     message: "The server is up and running...",
   });
 });
 
 // Resource Not Found
-app.use("*", (req, res) => {
+app.use("*", (_, res) => {
   return res.status(404).json({
     message: "Resource Not Found",
   });
