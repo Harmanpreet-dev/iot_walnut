@@ -10,8 +10,8 @@ import { FaAngleRight } from "react-icons/fa";
 import DevicesLocations from "./DevicesLocations";
 import TaskScheduler from "./TaskScheduler";
 import DevicesByOperators from "./DevicesByOperators";
-import Alerts from "./devices/Alerts";
-import Tickets from "./Tickets";
+import AllAlerts from "./AllAlerts";
+import AllTickets from "./AllTickets";
 import DeviceGraph from "./DeviceGraph";
 import DeviceList from "./DeviceList";
 
@@ -36,7 +36,7 @@ export default function FleetDetails({ selectedFleet }) {
               size="large"
               icon={<FaAngleRight />}
               iconPosition="end"
-              className="icon-button btn-neutral"
+              className="button"
             >
               Search Query
             </Button>
@@ -56,10 +56,10 @@ export default function FleetDetails({ selectedFleet }) {
       </Row>
       <Row gutter={8}>
         <Col span={12}>
-          <Alerts />
+          <AllAlerts />
         </Col>
         <Col span={12}>
-          <Tickets />
+          <AllTickets />
         </Col>
       </Row>
       <Row gutter={8}>

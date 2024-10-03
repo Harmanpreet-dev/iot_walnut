@@ -1,9 +1,9 @@
 import Filter from "./Filter";
 
-export default function Temperature() {
+export default function NetworkType() {
   return (
     <div className="layout">
-      <Filter title={"Temperature"} />
+      <Filter title={"Network Type"} />
     </div>
   );
 }

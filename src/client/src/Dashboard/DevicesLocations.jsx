@@ -10,7 +10,7 @@ L.Icon.Default.mergeOptions({
 });
 
 export default function DevicesLocations() {
-  const position = [51.505, -0.09]; // Coordinates for London
+  const position = [31.67956967890409, 74.87539111910824];
 
   return (
     <>

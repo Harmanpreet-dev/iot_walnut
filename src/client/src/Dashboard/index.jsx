@@ -11,6 +11,7 @@ import FleetDetails from "./FleetDetails";
 import { useDispatch, useSelector } from "react-redux";
 import { SET_SELECTED_FLEET } from "../redux/actions/dashboardActions";
 import axiosInstance from "../utils/axiosInstance";
+import Devices from "./devices/Devices";
 
 export default function Dashboard() {
   const [fleets, setFleets] = useState([]);
@@ -53,6 +54,7 @@ export default function Dashboard() {
           },
         ]}
       />
+
       <div className="rectangle-240">
         <Flex gap="middle" vertical>
           <Row>
@@ -69,8 +71,8 @@ export default function Dashboard() {
           </Row>
         </Flex>
       </div>
-
       <FleetDetails selectedFleet={selectedFleet} />
+      <Devices />
     </div>
   );
 }

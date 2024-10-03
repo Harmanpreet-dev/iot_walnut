@@ -1,9 +1,9 @@
 import Filter from "./Filter";
 
-export default function Temperature() {
+export default function Tickets() {
   return (
     <div className="layout">
-      <Filter title={"Temperature"} />
+      <Filter title={"Tickets"} />
     </div>
   );
 }

@@ -1,13 +1,13 @@
 import { Button, Col, Flex, Select } from "antd";
 import { UploadOutlined } from "@ant-design/icons";
-import Ticket from "./Ticket";
+import Alert from "./Alert";
 
-export default function Tickets() {
+export default function AllAlerts() {
   return (
     <div className="rectangle-12 p-4">
       <Flex justify={"space-between"} className="my-4">
         <Col span={12}>
-          <div className="fleet-name">Tickets</div>
+          <div className="fleet-name">Alerts</div>
         </Col>
         <Col>
           <Select
@@ -28,17 +28,17 @@ export default function Tickets() {
             size="large"
             icon={<UploadOutlined />}
             iconPosition="end"
-            className="icon-button btn-neutral"
+            className="button"
           >
             Export
           </Button>
         </Col>
       </Flex>
       <Flex justify={"space-between"} vertical className="my-4 gap-4">
-        <Ticket />
-        <Ticket />
-        <Ticket />
-        <Ticket />
+        <Alert />
+        <Alert />
+        <Alert />
+        <Alert />
       </Flex>
     </div>
   );
