@@ -1,5 +1,6 @@
 import { FleetSVG, SchdulerSVG, User2SVG, UserSVG, OTAUpdate } from "./SVGIcon";
 import { HiOutlineViewGrid } from "react-icons/hi";
+import { FaHome } from "react-icons/fa";
 
 export let SideBarDataSuperAdmin = [
   {
@@ -44,5 +45,14 @@ export let SideBarDataSuperAdmin = [
     name: "Logger",
     link: "/manage-logger",
     svg: <FleetSVG />,
+  },
+];
+
+export let adminDashboard = [
+  {
+    id: 1,
+    name: "Dashboard",
+    link: "/dashboard",
+    svg: <FaHome />,
   },
 ];

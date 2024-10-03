@@ -41,7 +41,7 @@ const Login = () => {
     const savedTheme = localStorage.getItem("theme") || "light";
     setTheme(savedTheme);
     document.querySelector("html").setAttribute("data-theme", savedTheme);
-  }, []);
+  }, [islogin]);
 
   const handleToggle = () => {
     if (type === "password") {

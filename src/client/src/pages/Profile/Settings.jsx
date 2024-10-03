@@ -59,7 +59,7 @@ export default function Settings() {
         </div>
         {getData !== null ? (
           <>
-            <img src={googleQr} />
+            <img src={googleQr} alt={"Google Qr"} />
             <div className="my-4">
               <div>
                 <input

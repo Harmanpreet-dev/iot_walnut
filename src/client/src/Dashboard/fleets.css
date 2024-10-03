@@ -1,0 +1,238 @@
+.icon-button {
+  background: oklch(32.1785% 0.02476 255.701624 / 1);
+  color: oklch(89.4994% 0.011585 252.096176 / 1);
+}
+
+.icon-button:hover {
+  background: oklch(32.1785% 0.02476 255.701624 / 1) !important;
+  color: oklch(89.4994% 0.011585 252.096176 / 1) !important;
+  outline-color: oklch(32.1785% 0.02476 255.701624 / 1) !important;
+  border-color: oklch(32.1785% 0.02476 255.701624 / 1) !important;
+}
+
+.contents-heading {
+  width: 151px;
+  height: 23px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: DM Sans;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
+  text-align: left;
+  color: #2d3748;
+}
+
+.rectangle-11 {
+  width: 230px;
+  height: 83px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0px 3.5px 5.5px 0px #00000005;
+}
+
+.group-44760 {
+  width: 43px;
+  height: 39.53px;
+  border-radius: 16px;
+}
+
+.group-44744 {
+  width: 66.36px;
+  height: 31px;
+  top: 875px;
+  left: 377.69px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: DM Sans;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30.8px;
+  text-align: left;
+  color: #2d3748;
+}
+
+.group-44745 {
+  width: 106.61px;
+  height: 21px;
+  top: 902px;
+  left: 377.69px;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #8a8a8a;
+}
+.group-44746 {
+  color: #000000;
+}
+
+.group_44774 {
+  width: 297.3px;
+  height: 152.62px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0px 3.5px 5.5px 0px #00000005;
+}
+
+.group_44775 {
+  width: 158px;
+  height: 21px;
+  top: 879px;
+  left: 572px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #8a8a8a;
+}
+
+.group_44776 {
+  height: 20px;
+  top: 903px;
+  left: 572px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: DM Sans;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  color: #2d3748;
+}
+
+.group_44777 {
+  width: 224.97px;
+  height: 36px;
+  top: 923px;
+  left: 572px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 35.5px;
+  text-align: left;
+  color: #2d3748;
+}
+.group_44778 {
+  width: 156.27px;
+  height: 21px;
+  top: 969px;
+  left: 572px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #8a8a8a;
+}
+
+.rectangle-12 {
+  height: 662px;
+  top: 1267px;
+  left: 297px;
+  border-radius: 22px;
+  background: #ffffff;
+}
+
+.rectangle-4485 {
+  width: 480px;
+  height: 122px;
+  top: 1360px;
+  left: 319px;
+  gap: 0px;
+  border-radius: 8px;
+  border: 1px;
+  opacity: 0px;
+  background: linear-gradient(
+    90deg,
+    rgba(225, 255, 226, 0.68) 0%,
+    rgba(227, 241, 255, 0.68) 100%
+  );
+  border: 1px solid #ffffff1a;
+  box-shadow: 0px 4px 13px 0px #0000001a;
+}
+
+.alert-name {
+  width: 67px;
+  height: 29px;
+  top: 1373px;
+  left: 339.41px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: DM Sans;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28.64px;
+  text-align: left;
+  color: #000000;
+}
+
+.alert-date {
+  width: 158px;
+  height: 20px;
+  top: 1379px;
+  left: 417px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: DM Sans;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19.53px;
+  text-align: left;
+  color: #8c8888;
+}
+
+.alert-detail {
+  width: 300.24px;
+  height: 42px;
+  top: 1408px;
+  left: 339.41px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.83px;
+  text-align: left;
+  background: #666666;
+}
+
+.alert-button {
+  width: 123.4px;
+  height: 36px;
+  top: 1541px;
+  left: 661.99px;
+  padding: 0px 16px 0px 16px;
+  gap: 0px;
+  border-radius: 5px;
+  border: 1px;
+  opacity: 0px;
+  background: #ffffff;
+  border: 1px solid #51dca8;
+  backdrop-filter: blur(10px);
+  color: #51dca8;
+}
+
+.ant-table {
+  background: unset;
+}
+.ant-table table {
+  border-spacing: 0 8px;
+  background: oklch(96.1151% 0 0 / 1);
+}
+
+.ant-table table tbody tr {
+  background: #fff;
+}
+
+.ant-table table thead tr {
+  background: oklch(96.1151% 0 0 / 1);
+}
