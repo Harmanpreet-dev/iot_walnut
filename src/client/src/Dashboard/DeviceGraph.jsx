@@ -5,21 +5,11 @@ import {
   CategoryScale,
   LinearScale,
   BarElement,
-  Title,
-  Tooltip,
-  Legend,
 } from "chart.js";
 
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend
-);
+ChartJS.register(CategoryScale, LinearScale, BarElement);
 
-const MultiSeriesBarChart = () => {
+const DeviceGraph = () => {
   const data = {
     labels: ["v1", "v2", "v3", "v4", "v5"],
     datasets: [
@@ -44,14 +34,9 @@ const MultiSeriesBarChart = () => {
   const options = {
     indexAxis: "y",
     responsive: true,
-    plugins: {
-      legend: {
-        position: "top",
-      },
-    },
   };
 
   return <Bar data={data} options={options} />;
 };
 
-export default MultiSeriesBarChart;
+export default DeviceGraph;
