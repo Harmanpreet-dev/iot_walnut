@@ -14,15 +14,17 @@ import AllAlerts from "./AllAlerts";
 import AllTickets from "./AllTickets";
 import DeviceGraph from "./DeviceGraph";
 import DeviceList from "./DeviceList";
+import SearchQuery from "./SearchQeury";
+import { useNavigate } from "react-router-dom";
 
 export default function FleetDetails({ selectedFleet }) {
   const [deferredQuery, setDeferredQuery] = useState("");
-
+  const navigate = useNavigate();
   return (
     <>
       <Flex justify={"space-between"} className="my-4">
         <Row>
-          <div className="fleet-name">{selectedFleet.name}</div>
+          <div className="fleet-name">{selectedFleet?.name}</div>
         </Row>
         <Row gutter={8}>
           <Col>
@@ -33,6 +35,7 @@ export default function FleetDetails({ selectedFleet }) {
           </Col>
           <Col>
             <Button
+              onClick={() => navigate("/dashboard/search-query")}
               size="large"
               icon={<FaAngleRight />}
               iconPosition="end"

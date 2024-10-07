@@ -1,9 +1,6 @@
+import { Card, Col, Flex, Row } from "antd";
 import Filter from "./Filter";
 
 export default function Alerts() {
-  return (
-    <div className="layout">
-      <Filter title={"Alerts"} />
-    </div>
-  );
+  return <>Alerts</>;
 }

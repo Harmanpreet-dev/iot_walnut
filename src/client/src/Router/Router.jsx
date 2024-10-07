@@ -31,6 +31,8 @@ import SwaggerDocs from "../components/common/SwaggerDocs";
 import { useSelector } from "react-redux";
 import { Spin } from "antd";
 import Dashboard from "../Dashboard";
+import SearchQeury from "../Dashboard/SearchQeury";
+import DashboardDevices from "./../Dashboard/DeviceData";
 
 const routerAdmin = createBrowserRouter(
   createRoutesFromElements(
@@ -42,6 +44,13 @@ const routerAdmin = createBrowserRouter(
         <Route path="/api-docs" element={<SwaggerDocs />}></Route>
         <Route path="/change-password" element={<ChangePassword />}></Route>
         <Route path="/dashboard" element={<Dashboard />}></Route>
+        <Route path="/dashboard/devices" element={<DashboardDevices />}></Route>
+        <Route path="/dashboard/search-query" element={<SearchQeury />}></Route>
+
+        <Route
+          path="/manage-devices/:fleet"
+          element={<ManageDevices />}
+        ></Route>
         <Route path="/manage-admin" element={<ManageAdmin />}></Route>
         <Route path="/manage-user" element={<Manageuser />}></Route>
         <Route path="/manage-category" element={<ManageCategory />}></Route>

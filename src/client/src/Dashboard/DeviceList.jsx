@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Switch, Table } from "antd";
+import { useNavigate } from "react-router-dom";
 const columns = [
   {
     title: "Model",
@@ -65,6 +66,12 @@ const dataSource = Array.from({
   sim_operator: ["Jio", "BSNL", "VI", "Airtel"][i % 4],
 }));
 const App = () => {
+  const navigate = useNavigate();
+
+  const handleClick = (record) => {
+    navigate("/dashboard/devices");
+  };
+
   return (
     <>
       <Table
@@ -73,6 +80,9 @@ const App = () => {
         scroll={{
           x: 1500,
         }}
+        onRow={(record) => ({
+          onClick: () => handleClick(record),
+        })}
       />
     </>
   );

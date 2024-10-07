@@ -54,7 +54,6 @@ export default function Dashboard() {
           },
         ]}
       />
-
       <div className="rectangle-240">
         <Flex gap="middle" vertical>
           <Row>
